@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "vite-plugin-windicss": "^1.8.10",
+    "windicss": "^3.5.6"
+  }
+}

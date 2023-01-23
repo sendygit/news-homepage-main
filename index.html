@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "grayish-blue": "#c5c6ce",
+              "dark-grayish-blue": "#5d5f79",
+              "dark-blue": "#00001a",
+              "soft-orange": "#e9ab53",
+              "soft-red": "#f15e50",
+              putih: "#fffdfa",
+            },
+            fontFamily: {
+              inter: "'Inter', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="py-20 px-32">
+    <!-- Hamburger menu -->
+    <!-- <div class="fixed ml-auto text-[40px] top-[40px] right-[100px]">
+      <ion-icon name="menu"></ion-icon>
+    </div> -->
+    <!-- Navbar -->
+    <div class="flex">
+      <img src="./assets/images/logo.svg" alt="" />
+      <nav class="flex ml-auto space-x-8 font-inter">
+        <p>Home</p>
+        <p>New</p>
+        <p>Popular</p>
+        <p>Trending</p>
+        <p>Categories</p>
+      </nav>
+    </div>
+
+    <div class="grid grid-cols-2 mt-8">
+      <div>
+        <img src="/assets/images/image-web-3-desktop.jpg" alt="" />
+
+        <div class="grid grid-cols-2 mt-6">
+          <div>
+            <h1 class="font-bold text-5xl">The Bright Future of Web 3.0</h1>
+          </div>
+          <div>
+            <p class="text-dark-grayish-blue text-sm">
+              We dive into the next evolution of the web that claims to put the power of the
+              platforms back into the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <button
+              class="mt-4 px-6 py-4 bg-soft-red text-putih text-xs tracking-[0.3em] uppercase"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark-blue ml-8 px-5 py-6 grid">
+        <div class="border-b border-dark-grayish-blue pb-6">
+          <h1 class="text-soft-orange text-3xl font-semibold">New</h1>
+          <h2 class="text-putih mt-4 text-xl">Hydrogen VS Electric Cars</h2>
+          <p class="text-dark-grayish-blue text-base">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+
+        <div class="border-b border-dark-grayish-blue pb-6">
+          <h2 class="text-putih mt-4 text-xl">The Downsides of AI Artistry</h2>
+          <p class="text-dark-grayish-blue text-base">
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+        </div>
+
+        <div class="">
+          <h2 class="text-putih mt-4 text-xl">Is VC Funding Drying Up?</h2>
+          <p class="text-dark-grayish-blue text-base">
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 mt-8">
+      <div class="flex">
+        <div>
+          <img class="h-28" src="./assets/images/image-retro-pcs.jpg" alt="" />
+        </div>
+        <div class="ml-6 grid space-y-2">
+          <h1 class="text-3xl font-bold text-grayish-blue">01</h1>
+          <h2 class="font-bold text-base">Reviving Retro PCs</h2>
+          <p class="text-dark-grayish-blue text-xs">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div>
+          <img class="h-28" src="./assets/images/image-top-laptops.jpg" alt="" />
+        </div>
+        <div class="ml-6 grid space-y-2">
+          <h1 class="text-3xl font-bold text-grayish-blue">02</h1>
+          <h2 class="font-bold text-base">Top 10 Laptops of 2022</h2>
+          <p class="text-dark-grayish-blue text-xs">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div>
+          <img class="h-28" src="./assets/images/image-gaming-growth.jpg" alt="" />
+        </div>
+        <div class="ml-6 grid space-y-2">
+          <h1 class="text-3xl font-bold text-grayish-blue">03</h1>
+          <h2 class="font-bold text-base">The Growth of Gaming</h2>
+          <p class="text-dark-grayish-blue text-xs">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  New 
+
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+   -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
